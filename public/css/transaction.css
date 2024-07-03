@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+.content {
+    margin-left: 250px;
+    /* Adjust the value based on your sidebar width */
+    padding: 20px;
+    height: 100vh;
+    /* Make the container height fill the entire viewport */
+    width: 100%;
+    /* Make the container width fill the entire viewport */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+}
+
+h2 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Optional: Add some spacing between table rows */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
