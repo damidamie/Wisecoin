@@ -3,6 +3,7 @@
 use App\Http\Controllers\ExpenseCalendarController;
 use App\Http\Controllers\TransactionController;
 use App\Http\Controllers\WalletController;
+use App\Http\Controllers\PlanningController;
 use App\Http\Controllers\DashboardController;
 use App\Models\Transaction;
 use Illuminate\Support\Facades\Route;
@@ -45,3 +46,10 @@ Route::put('/wallet/update_expense', [WalletController::class, 'updateMonthlyExp
 
 // Start Expense Calendar
 Route::get('/calendar', [ExpenseCalendarController::class, 'index'])->name('calendar');
+// End Expense Calendar
+
+// Start Planning
+Route::get('/planning', [PlanningController::class, 'index'])->name('planning');
+
+Route::post('/planning/store', [PlanningController::class, 'store'])->name('store.planning');
+// End Planning

@@ -18,5 +18,10 @@
                 <i class="fa fa-calendar"></i>
                 Calendar</a>
         </li>
+        <li>
+            <a href="{{ route('planning') }}">
+                <i class="fa fa-clipboard-list"></i>
+                Planning</a>
+        </li>
     </ul>
 </div>
